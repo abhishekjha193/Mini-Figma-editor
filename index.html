@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Mini Figma</title>
+  </head>
+  <body>
+    <div class="editorWrapper">
+      <aside class="Panel">
+       <div class="name">
+        <img src="images/logo.png" alt="" srcset="">
+        <h1>Mini Figma</h1>
+       </div>
+ 
+       <div class="layer">
+        <h3 >Layers</h3>
+
+        <button id="moveLayerUp"><i class="ri-expand-up-down-fill"></i></button>
+        <button id="moveLayerDown"><i class="ri-contract-up-down-fill"></i></button>
+
+         <ul id="layerList"></ul>
+       </div>
+      </aside>
+
+      <main class="canvasWrapper">
+        <div id="designCanvas"></div>
+        <div id="tools">
+          <button class="tool-b" id="addRect"><i class="ri-square-line"></i></button>
+          <button class="tool-b" id="addText"><i class="ri-t-box-line"></i></button>
+          <button class="tool-b" ><i class="ri-send-ins-line"></i></button>
+          <button class="tool-b" ><i class="ri-artboard-2-line"></i></button>
+          <button class="tool-b"><i class="ri-brush-fill"></i></button>
+          <button class="tool-b"><i class="ri-settings-4-line"></i></button>
+          <button class="tool-b"><i class="ri-eraser-fill"></i></button>
+        </div>
+      </main>
+
+      <aside class="propertyPanel">
+        <h3>Properties</h3>
+
+        <label>
+          Width
+          <input type="number" id="propWidth" />
+        </label>
+         <br>
+        <label>
+          Height
+          <input type="number" id="propHeight" />
+        </label>
+
+        <br />
+        <label>
+          Background
+          <input type="color" id="propBg" />
+        </label>
+
+        <br />
+        <br />
+
+        <label id="textBoxWrapper">
+          Text
+          <input type="text" id="propText" />
+        </label>
+
+      </aside>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

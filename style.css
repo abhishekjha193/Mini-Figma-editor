@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.editorWrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.Panel {
+  width: 220px;
+  padding: 10px;
+  background: white;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.name{
+ height: 120px;
+ display: flex;
+ align-items: center;
+ font-size: 10px;
+ border-bottom: 1px solid rgb(143, 142, 142);
+}
+
+.layer button{
+  font-size: xx-large;
+  border-radius: 20%;
+  margin: 0px 5px;
+}
+
+.layer button:hover{
+  scale: 1.2;
+}
+
+.name img{
+  width: 30%;
+  height: 40%;
+}
+
+.propertyPanel {
+  width: 220px;
+  padding: 10px;
+  background: white;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.canvasWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+#tools{
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  height: 8%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.tool-b {
+  height: 100%;
+  width:15%;
+  font-size: xx-large;
+  border-radius: 10px;
+  border:none;
+  background: transparent;
+}
+
+.tool-b:hover{
+  background-color: rgb(0, 187, 255);
+  color: white;
+}
+
+#designCanvas {
+  width: 900px;
+  height: 500px;
+  border: 1px solid black;
+  position: relative;
+  background: white;
+  overflow: hidden;
+}
+
+.resize-handle {
+  width: 10px;
+  height: 10px;
+  background: blue;
+  position: absolute;
+  cursor: nwse-resize; 
+}
+
+.resize-handle.top-left {
+  top: -5px;
+  left: -5px;
+  cursor: nwse-resize; 
+}
+
+.resize-handle.top-right {
+  top: -5px;
+  right: -5px;
+  cursor: nesw-resize; 
+}
+
+.resize-handle.bottom-right {
+  bottom: -5px;
+  right: -5px;
+  cursor: nwse-resize; 
+}
+
+.resize-handle.bottom-left {
+  bottom: -5px;
+  left: -5px;
+  cursor: nesw-resize; 
+}
+
+.selected {
+  outline: 2px solid #007bff;
+  outline-offset: -2px;
+}
+
+.design-element {
+  position: absolute;
+}
+
+.rotate-handle {
+  width: 12px;
+  height: 12px;
+  background: blue;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: grab;
+}
+
+
