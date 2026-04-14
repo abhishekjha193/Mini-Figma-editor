@@ -60,6 +60,8 @@ The main objective of this project is to demonstrate:
 - **JavaScript (Vanilla)** – Complete logic and interactivity
 
 ---
+Live Link - https://mini-figma-editor-xi.vercel.app/
+---
 
 ## 📂 Project Screenshot
 <img width="1917" height="908" alt="image" src="https://github.com/user-attachments/assets/6e814f98-a7bf-4fc6-ba0d-55fcbb04fe67" />
